@@ -1,0 +1,19 @@
+{% include "index.html" %}
+<div class="container mt-4">
+  <div class="card p-4">
+    <h4>Create Bank Account</h4>
+    <form method="POST">
+      <div class="mb-3">
+        <label>Name:</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Initial Balance (₹):</label>
+        <input type="number" name="balance" class="form-control" step="0.01" required>
+      </div>
+      <button class="btn btn-success" type="submit">Create</button>
+      <p class="mt-3 text-success">{{ message }}</p>
+      <a href="/" class="btn btn-secondary mt-2">Back to Home</a>
+    </form>
+  </div>
+</div>

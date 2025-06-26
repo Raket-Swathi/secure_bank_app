@@ -1,0 +1,25 @@
+{% include "index.html" %}
+<div class="container mt-4">
+  <div class="card p-4">
+    <h4>Account Balances</h4>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Account ID</th>
+          <th>Name</th>
+          <th>Current Balance (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for acc in balances %}
+        <tr>
+          <td>{{ acc[0] }}</td>
+          <td>{{ acc[1] }}</td>
+          <td>{{ acc[2] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+  </div>
+</div>

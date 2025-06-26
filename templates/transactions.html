@@ -1,0 +1,29 @@
+{% include "index.html" %}
+<div class="container mt-4">
+  <div class="card p-4">
+    <h4>Transaction History</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Account ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Amount (₹)</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for txn in txns %}
+        <tr>
+          <td>{{ txn[0] }}</td>
+          <td>{{ txn[1] }}</td>
+          <td>{{ txn[2] }}</td>
+          <td>{{ txn[3] }}</td>
+          <td>{{ txn[4] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+  </div>
+</div>

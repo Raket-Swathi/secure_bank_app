@@ -1,0 +1,19 @@
+{% include "index.html" %}
+<div class="container mt-4">
+  <div class="card p-4">
+    <h4>Deposit Funds</h4>
+    <form method="POST">
+      <div class="mb-3">
+        <label>Account ID:</label>
+        <input type="text" name="acc_id" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Amount to Deposit (₹):</label>
+        <input type="number" name="amount" class="form-control" required>
+      </div>
+      <button class="btn btn-primary" type="submit">Deposit</button>
+      <p class="mt-3 text-success">{{ message }}</p>
+      <a href="/" class="btn btn-secondary mt-2">Back to Home</a>
+    </form>
+  </div>
+</div>
