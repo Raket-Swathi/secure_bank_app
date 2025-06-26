@@ -59,7 +59,6 @@ retail_bank_app/
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Raket-Swathi/secure_bank_app.git
-cd retail_bank_app
 ```
 ---
 ```
